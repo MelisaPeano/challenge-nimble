@@ -20,6 +20,10 @@ export const apiService = {
       body: JSON.stringify(applicationData),
     });
     
+    if (!response.ok) {
+    console.error("DEBUG - API Detailed Error:", result.details?.fieldErrors || result);
+    throw new Error(result.message || 'Submission failed');
+  }
    
     const result = await response.json();
     if (!response.ok) throw new Error(result.message || 'Submission failed');
