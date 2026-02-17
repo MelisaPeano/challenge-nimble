@@ -12,7 +12,7 @@ const JobCard = ({ job, candidate, onApply }) => {
         uuid: candidate.uuid,
         jobId: job.id,
         candidateId: candidate.candidateId,
-        applicationId: candidate.aplicationId,
+        applicationId: candidate.applicationId,
         repoUrl: repoUrl
       });
       setRepoUrl('');
