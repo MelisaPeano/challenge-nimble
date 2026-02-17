@@ -1,16 +1,30 @@
-# React + Vite
+# 🚀 Nimble Gravity - Fullstack Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene la resolución del desafío técnico para la posición de **Fullstack Developer**. La aplicación permite listar vacantes disponibles y enviar postulaciones vinculadas a un perfil de candidato mediante una API REST.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* **React**: Biblioteca principal para la interfaz de usuario.
+* **Vite**: Herramienta de construcción para un desarrollo rápido.
+* **Tailwind CSS**: Framework de utilidades para el diseño visual.
+* **Git**: Control de versiones para la gestión del código.
 
-## React Compiler
+## 📋 Funcionalidades del Challenge
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. **Sincronización de Candidato**: Obtención de datos de perfil (`uuid`, `candidateId`, `applicationId`) mediante el correo electrónico del aspirante.
+2. **Listado de Vacantes**: Consumo de la API para mostrar las posiciones abiertas en tiempo real.
+3. **Formulario de Postulación**: Validación y envío de la URL del repositorio de GitHub para posiciones específicas.
+4. **Manejo de Estados**: Gestión de estados de carga (loading) y errores de validación de la API (Bad Request 400).
 
-## Expanding the ESLint configuration
+## 🔧 Instalación y Ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Para correr este proyecto localmente, sigue estos pasos:
+
+1. **Clonar el repositorio**:
+   ```bash
+   git clone [`https://github.com/MelisaPeano/challenge-nimble.git`]
+   cd challenge-nimble
+
+   npm install
+
+   npm run dev
